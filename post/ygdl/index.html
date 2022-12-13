@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>遥感导论（梅安新版）知识点概括 | TYH</title>
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tyuhao.github.io/favicon.ico?v=1670899974928">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tyuhao.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://tyuhao.github.io">
+        <img class="avatar" src="https://tyuhao.github.io/images/avatar.png?v=1670899974928" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://tyuhao.github.io">
+        <h1 class="site-title">TYH</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">遥感导论（梅安新版）知识点概括</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2022-12-11</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://tyuhao.github.io/tag/RS/">
+                    遥感
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content" v-pre>
+            <title id="reader-title">遥感导论（梅安新版）知识点概括</title>
+<meta http-equiv="Content-Security-Policy" content="default-src chrome:; img-src data: *; media-src *; object-src 'none'">
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta name="viewport" content="width=device-width; user-scalable=0">
+<link rel="stylesheet" href="chrome://global/skin/aboutReader.css" type="text/css">
+<link rel="stylesheet" href="chrome://global/skin/aboutReaderPocket.css" type="text/css">
+<link rel="localization" href="toolkit/about/aboutReader.ftl">
+<link rel="localization" href="browser/branding/brandings.ftl">
+<link rel="stylesheet" href="chrome://global/skin/narrate.css">
+<link rel="shortcut icon" href="https://g.csdnimg.cn/static/logo/favicon32.ico">
+<div class="top-anchor"></div>
+<h3 id="11-遥感的基本概念">1.1 遥感的基本概念</h3>
+<p><strong>广义的遥感</strong>：泛指一切无接触的远距离探测，包括对电磁场、力场、机械波等的探测。</p>
+<p><strong>狭义的遥感</strong>：遥感是应用探测仪器，不与探测目标相接触，从远处把目标的电磁波特性记录下来，通过分析，揭示出物体的特征性质及其变化的综合性探测技术。</p>
+<h3 id="12-遥感系统">1.2 遥感系统</h3>
+<ul>
+<li>被测目标的信息特征</li>
+<li>信息的获取</li>
+<li>信息的传输与记录</li>
+<li>信息的处理</li>
+<li>信息的应用</li>
+</ul>
+<!-- -->
+<h3 id="13-遥感的类型">1.3 遥感的类型</h3>
+<p><strong>1.3.1 按遥感平台分</strong></p>
+<ul>
+<li>地面遥感</li>
+<li>航空遥感</li>
+<li>航天遥感</li>
+<li>航宇遥感</li>
+</ul>
+<!-- -->
+<p><strong>1.3.2 按传感器的探测波段分</strong></p>
+<ul>
+<li>紫外遥感：探测波段在0.05-0.38um之间</li>
+<li>可见光遥感：探测波段在0.38-0.76um之间</li>
+<li>红外遥感：探测波段 在0.76-1000um之间</li>
+<li>微波遥感：探测波段在1mm-10m之间</li>
+<li>多波段遥感：探测波段在可见光和红外波段范围之内，再分成若干窄波段来探测目标。</li>
+</ul>
+<!-- -->
+<p><strong>1.3.3 按工作方式分</strong></p>
+<ul>
+<li>主动遥感和被动遥感</li>
+<li>成像遥感和非成像遥感</li>
+</ul>
+<!-- -->
+<p><strong>1.3.4 按遥感的应用领域分</strong></p>
+<ul>
+<li>从大的研究领域:大气遥感、陆地遥感、海洋遥感</li>
+<li>从具体应用领域：资源遥感、环境遥感、农业遥感、林业遥感等</li>
+</ul>
+<!-- -->
+<h3 id="14-遥感的特点">1.4 遥感的特点</h3>
+<ul>
+<li>大面积的同步观测</li>
+<li>时效性好</li>
+<li>数据的综合性和可比性高</li>
+<li>经济效益高</li>
+<li>具有一定局限性</li>
+</ul>
+<!-- -->
+<h3 id="15-遥感发展简史">1.5 遥感发展简史</h3>
+<p>1.5.1 无记录的地面遥感阶段（1608-1838年）</p>
+<p>1.5.2 有记录的地面遥感阶段（1839-1857年)</p>
+<p>1.5.3 空中摄影遥感阶段（1858-1956年）</p>
+<p>1.5.4 航天遥感阶段（1957-至今）</p>
+<hr>
+<h2 id="第二章-电磁辐射与地物光谱特征">第二章 电磁辐射与地物光谱特征</h2>
+<h3 id="21-电磁波谱与电磁辐射">2.1 电磁波谱与电磁辐射</h3>
+<p><strong>2.1.1 电磁波谱</strong></p>
+<ul>
+<li>波：振动的传播称为波，电磁振动的传播是电磁波。</li>
+<li>电磁波：当电磁振荡进入空间，变化的磁场激发了涡旋电场，变化的电场又激发了涡旋磁场，使电磁振荡在空间传播，这就是电磁波。</li>
+<li>电磁波谱：按电磁波在真空中传播的波长或频率，递增或递减排列，则构成了电磁波谱。</li>
+</ul>
+<!-- -->
+<p><strong>2.1.2 电磁辐射的度量</strong></p>
+<ul>
+<li>辐射能量：电磁辐射的能量。</li>
+<li>辐射通量：单位时间内通过某一面积的辐射能量。</li>
+<li>辐射通量密度：单位时间内通过单位面积的辐射能量。</li>
+<li>辐照度：被辐射的物体表面单位面积上的辐射通量。</li>
+<li>辐射出射度：辐射源物体表面单位面积上的辐射通量。</li>
+<li>辐射亮度：辐射源在某一方向，单位投影表面，单位立体角内的辐射通量。</li>
+</ul>
+<!-- -->
+<p><strong>2.1.3 黑体辐射</strong></p>
+<ol>
+<li>绝对黑体：对任何波长的电磁辐射全都吸收的物体。</li>
+<li>黑体辐射规律</li>
+</ol>
+<!-- -->
+<h3 id="22-太阳辐射及大气对辐射的影响">2.2 太阳辐射及大气对辐射的影响</h3>
+<p><strong>2.2.1 太阳辐射</strong></p>
+<ol>
+<li>太阳常数：不受大气影响，在距太阳一个天文单位内，垂直于太阳光辐射方向上，单位面积单位时间黑体所接收的太阳辐射能量。</li>
+<li>太阳光谱<img src="https://img-blog.csdnimg.cn/20191129145631301.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1ZTSU5P,size_16,color_FFFFFF,t_70" alt="" width="811" height="459" loading="lazy"></li>
+</ol>
+<!-- -->
+<p><strong>2.2.2 大气吸收</strong></p>
+<ol>
+<li>大气层次：对流层、平流层、电离层、外大气层。</li>
+<li>大气成分：主要为分子（N2,O2,CO2等）和其他微粒（烟，尘埃，雾霾，气溶胶）。</li>
+<li>大气对辐射的吸收作用：太阳辐射穿过大气层时，大气分子对电磁波的某些波段具有吸收作用。<img src="https://img-blog.csdnimg.cn/20191129150339660.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1ZTSU5P,size_16,color_FFFFFF,t_70" alt="" width="673" height="471" loading="lazy"></li>
+</ol>
+<!-- -->
+<p><strong>2.2.3 大气散射</strong></p>
+<p>辐射在传播过程中遇到小微粒而使传播方向改变，并向各个方向散开，成为散射。</p>
+<p>大气散射有三种情况：</p>
+<ul>
+<li>瑞利散射：当大气中粒子的直径比波长小得多时发生的散射。散射特点是散射强度与波长的四次方成反比，即波长越长，散射越弱。</li>
+<li>米氏散射：当大气中粒子的直径与辐射的波长相当时发生的散射。散射强度与波长的平方成反比。</li>
+<li>无选择性散射：当大气中粒子的直径比波长大得多时发生的散射。散射强度与波长无关。</li>
+</ul>
+<!-- -->
+<p><strong>2.2.4 大气窗口及透射分析</strong></p>
+<ol>
+<li>折射现象：电磁波穿过大气层时，除发生吸收和散射外，还会出现传播方向的改变，即发生折射。大气的折射率与大气密度相关，密度越大折射率越大。</li>
+<li>大气反射：反射现象主要发生在云层顶部，取决于云量。</li>
+<li>大气窗口：通常把电磁波通过大气层时较少被反射、吸收或散射的，透过率较高的波段称为大气窗口。</li>
+<li>大气透射的定量分析</li>
+</ol>
+<!-- -->
+<h3 id="23-地球的辐射与地物波谱">2.3 地球的辐射与地物波谱</h3>
+<p><strong>2.3.1 太阳辐射与地表的相互作用</strong></p>
+<div><table class="moz-reader-wide-table"><caption> 表2.1 地球辐射的分段特性 </caption><tbody><tr><td>波段名称</td><td>可见光与近红外</td><td>中红外</td><td>远红外</td></tr><tr><td>波长</td><td>0.3-2.5um</td><td>2.5-6um</td><td>&gt;6um</td></tr><tr><td>辐射特性</td><td>地表反射太阳辐射为主</td><td>地表反射太阳辐射和自身的热辐射</td><td>地表物体自身热辐射为主</td></tr></tbody></table></div>
+<p><strong>2.3.2 地物反射波谱特征</strong></p>
+<ol>
+<li>到达地面的太阳辐射能量=反射能量+吸收能量+透射能量</li>
+<li>反射率：物体反射的辐射能量占入射能量的百分比。</li>
+<li>物体反射状况分为三种：镜面反射，漫反射，实际物体反射</li>
+<li>反射波谱：地物反射率随波长的变化规律。</li>
+<li>地物反射波谱曲线</li>
+</ol>
+<!-- -->
+<p>（1）植被</p>
+<p>可见光波段（0.4-0.76um): 0.55um(绿)有一个小的反射峰，0.45um(蓝)和0.67um(红)有两个吸收带。这一特征是由于叶绿素的影响，叶绿素对蓝光和红光吸收作用强，对绿光反射作用强。</p>
+<p>近红外波段(0.7-0.8um)有反射“陡坡”，至1.1um附近有一峰值，这是由于植被叶细胞结构的影响，形成高的反射率。</p>
+<p>中红外波段(1.3-2.5um)受到绿色植物含水量的影响，吸收率大增，特别以1.45um,1.95um,2.7um为中心是水的吸收带，形成低谷。</p>
+<figure data-type="image" tabindex="1"><img src="https://img-blog.csdnimg.cn/20191129160542439.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1ZTSU5P,size_16,color_FFFFFF,t_70" alt="" loading="lazy"></figure>
+<p>（2）土壤</p>
+<p>通常土质越细反射率越高，有机质含量越高和含水量越高反射率越低。</p>
+<figure data-type="image" tabindex="2"><img src="https://img-blog.csdnimg.cn/20191129160825733.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1ZTSU5P,size_16,color_FFFFFF,t_70" alt="" width="660" height="425" loading="lazy"></figure>
+<p>（3）水体</p>
+<p>水体反射主要在蓝绿光波段，其他波段吸收都很强，特别到了近红外波段，吸收就更强。</p>
+<figure data-type="image" tabindex="3"><img src="https://img-blog.csdnimg.cn/20191129161029699.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1ZTSU5P,size_16,color_FFFFFF,t_70" alt="" width="545" height="547" loading="lazy"></figure>
+<p>(4)岩石</p>
+<p>岩石的反射光谱曲线无统一的特征，矿物成分、矿物含量、风化程度、含水状况、颗粒大小、表面光滑程度、色泽等都会对曲线</p>
+<p>形态产生影响。</p>
+<figure data-type="image" tabindex="4"><img src="https://img-blog.csdnimg.cn/20191129161557522.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1ZTSU5P,size_16,color_FFFFFF,t_70" alt="" width="486" height="385" loading="lazy"></figure>
+<h2 id="第三章-遥感成像原理与遥感图像特征">第三章 遥感成像原理与遥感图像特征</h2>
+<h3 id="31-遥感平台">3.1 遥感平台</h3>
+<p>遥感平台是搭载传感器的工具。根据运载工具的类型，可分为航天平台、航空平台和地面平台。在遥感平台中，航天遥感平台目前发展最快，可将其分为气象卫星系列、陆地卫星系列和海洋卫星系列。</p>
+<p><strong>3.1.1 气象卫星系列</strong></p>
+<ol>
+<li>气象卫星代表：TIROS,ESSA,Nimus,NOAA系列,FY系列。</li>
+<li>气象卫星特点：（1）轨道：低轨（近极地太阳同步轨道）和高轨（地球同步轨道）。（2）短周期重复观测。（3）成像面积大，有利于获取宏观同步信息。（4）资料来源连续、实时性强、成本低。</li>
+</ol>
+<!-- -->
+<p><strong>3.1.2 陆地卫星系列</strong></p>
+<ol>
+<li>主要系列：LandSat,SPOT,CBERS，其他陆地卫星</li>
+<li>高空间分辨率陆地卫星：IKONOS,Quickbird,OrbView</li>
+</ol>
+<!-- -->
+<p><strong>3.1.3 海洋卫星系列</strong></p>
+<ol>
+<li>海洋遥感特点:（1）需要高空和空间的遥感平台，以进行大面积同步覆盖的观测。（2）以微波为主。（3）电磁波与激光、声波的结合是扩大海洋遥感探测手段的一条新路。（4）海面实测资料的校正。</li>
+<li>海洋卫星：Seasat1,Nimbus-7,MOSI,ERS,RADARSAT.</li>
+</ol>
+<!-- -->
+<h3 id="32-摄影成像">3.2 摄影成像</h3>
+<p><strong>3.2.1 摄影机</strong></p>
+<ul>
+<li>分幅式摄影机</li>
+<li>全景摄影机</li>
+<li>多光谱摄影机</li>
+<li>数码摄影机</li>
+</ul>
+<!-- -->
+<p><strong>3.2.2 摄影相片的几何特征</strong></p>
+<ol>
+<li>垂直摄影：摄影机主光轴垂直于地面或偏离垂线在3度以内。取得的像片称水平像片。</li>
+<li>倾斜摄影：摄影机主光轴偏离垂线大于3度，取得的像片称为倾斜像片。</li>
+<li>像点位移：在中心投影的像片上，地形的起伏除引起像片比例尺外，还会引起平面上的点位在像片位置上的移动，这种现象称为像点位移。</li>
+</ol>
+<!-- -->
+<h3 id="33-扫描成像">3.3 扫描成像</h3>
+<p>扫描成像是依靠探测元件和扫瞄镜对目标地物以瞬时视场为单位进行的逐点、逐行取样，以得到目标地物电磁辐射特性信息，形成一定谱段的图像。</p>
+<ul>
+<li>光/机扫描成像：一般在扫描仪的前方安装光学镜头，依靠机械传动装置使镜头摆动，形成对目标地物的逐点逐行扫描。</li>
+<li>固体自扫描成像：用固定的探测元件，通过遥感平台的运动对目标地物进行扫描。</li>
+<li>高光谱成像光谱扫描：这种既能成像又能获取目标光谱曲线的“谱像合一”的技术，称为成像光谱技术。按该原理制成的扫描仪称为成像光谱仪。</li>
+</ul>
+<!-- -->
+<h3 id="34-微波遥感与成像">3.4 微波遥感与成像</h3>
+<p><strong>3.4.1 微波遥感的特点</strong></p>
+<ul>
+<li>能全天候、全天时工作</li>
+<li>对某些地物具有特殊的波谱特征</li>
+<li>对冰、雪、森林、土壤等具有一定穿透能力</li>
+<li>对海洋遥感具有特殊意义</li>
+<li>分辨率较低，但特性明显</li>
+</ul>
+<!-- -->
+<p><strong>3.4.2 微波遥感方式和传感器</strong></p>
+<p>主动微波遥感：通过向目标地物发射微波并接收其后向散射信号来实现对地观测遥感方式。</p>
+<ul>
+<li>雷达：无线电测距和定位。</li>
+<li>侧视雷达：天线与遥感平台的运动方向形成角度。侧视雷达的分辨力可分为距离分辨力（垂直于飞行的方向）和方位分辨力（平行于飞行方向）。</li>
+<li>合成孔径侧视雷达：利用遥感平台的前进运动，将一个小孔径的天线安装在平台侧方，以代替大孔径的天线，提高方位分辨力的雷达。</li>
+</ul>
+<!-- -->
+<p>被动微波遥感：通过传感器，接收来自目标地物发射的微波，而达到探测目的的遥感方式。</p>
+<h3 id="35-遥感图像的特征">3.5 遥感图像的特征</h3>
+<p>3.5.1 空间分辨率：像素所代表的地面范围大小。</p>
+<p>3.5.2 波谱分辨率：传感器在接收目标辐射的波谱时能分辨的最小波长间隔。</p>
+<p>3.5.3 辐射分辨率：传感器接收波谱信号时，能分辨的最小辐射度差。</p>
+<p>3.5.4 时间分辨率：对同一地点进行遥感采样的时间间隔，即重访周期。</p>
+<h2 id="第四章-遥感图像处理">第四章 遥感图像处理</h2>
+<h3 id="41-光学原理与光学处理">4.1 光学原理与光学处理</h3>
+<ol>
+<li>颜色的性质：明度，色调，饱和度</li>
+<li>互补色：若两种颜色混合产生白色或灰色，这两种颜色就称为互补色。</li>
+<li>三原色：红、绿、蓝最优三原色。</li>
+<li>光学增强处理：加色法彩色合成，减色法彩色合成</li>
+</ol>
+<!-- -->
+<h3 id="42-数字图像的校正">4.2 数字图像的校正</h3>
+<p><strong>4.2.1 数字图像</strong></p>
+<p>数字图像是指能够被计算机存储、处理和使用的图像。光学图像称作模拟量，数字图像称作数字量，它们之间的转换称为模/数变换，记作A/D变换。数字量时离散变量，模拟量是连续变量。</p>
+<p><strong>4.2.2 辐射校正</strong></p>
+<p>进入传感器的辐射强度反映在图像上就是亮度值（灰度值）。该值主要受两个物理量影响：一是太阳辐射照射到地面上的辐射强度，二是地物的光谱反射率。</p>
+<p>引起辐射畸变有两个原因：一是传感器仪器本身产生的误差；二是大气对辐射的影响。</p>
+<p>大气粗校正方法：（1）直方图最小值去除法 （2）回归分析法</p>
+<p><strong>4.2.3 几何校正</strong></p>
+<p>1.遥感影像变形的原因</p>
+<p>（1）遥感平台位置和运动状态变化的影响</p>
+<p>（2）地形起伏的影响</p>
+<p>（3）地球表面曲率的影响</p>
+<p>（4）大气折射的影响</p>
+<p>（5）地球自转的影响</p>
+<p>2.几何精校正</p>
+<p>（1）选取足够数量的满足要求的控制点。</p>
+<p>（2）建立校正前后图像 坐标的数学模型。</p>
+<p>（3）将校正后图像的像元中心值依次代入上述模型，求出各像元在原图像中的对应坐标。</p>
+<p>（4）根据求得的像元在原图像中的对应坐标进行亮度值<a href="https://so.csdn.net/so/search?q=%E9%87%8D%E9%87%87%E6%A0%B7&amp;spm=1001.2101.3001.7020">重采样</a>。</p>
+<p>3.亮度值重采样方法：</p>
+<ul>
+<li>最邻近法</li>
+<li>双线性内插法</li>
+<li>三次卷积内插法</li>
+</ul>
+<!-- -->
+<p>4.控制点的选取</p>
+<p>（1）数目的确定：控制点数目的最低限是按未知系数的多少来确定的。n次多项式，控制点的最少数目为（n+1)(n+2)/2.</p>
+<p>（2）选取原则：控制点应选取图像上易分辨且较精细的特征点、特征变化大的地区应多选些，尽可能满幅均匀选取。</p>
+<h3 id="43-数字图像增强">4.3 数字图像增强</h3>
+<p><strong>4.3.1 对比度变换</strong></p>
+<p>通过改变图像像元的亮度值来改变图像像元对比度，从而改善图像质量。</p>
+<ol>
+<li>线性变换：变换函数是线性的，有线性变换和分段线性变换，</li>
+<li>非线性变化：变换函数是非线性的，如指数变换和对数变换。</li>
+</ol>
+<!-- -->
+<p><strong>4.3.2 空间滤波</strong></p>
+<p>1.图像卷积运算：在空间域上对图像作局部检测的运算，以实现平滑和锐化的目的。</p>
+<p>2.平滑：图像中出现某些亮度变化过大的区域，或出现不该有的亮点时，采用平滑的方法可以减小变化，去掉不必要的噪声点。</p>
+<p>（1）均值平滑：将每个像元在以其为中心的区域内取平均值代替该像元值，以达到去掉噪声和平滑图像目的。</p>
+<p>（2）中值滤波：将每个像元在以其为中心的邻域内取中间亮度值来代替该像元值，以达到去噪声和平滑图像的目的。</p>
+<p>3.锐化：为了突出图像的边缘、线状目标或某些亮度变化率大的部分，可采用锐化方法。</p>
+<p>（1）罗伯特梯度</p>
+<p>（2）索伯尔梯度</p>
+<p>（3）拉普拉斯算法</p>
+<p>（4）定向检测</p>
+<p><strong>4.3.3 彩色变换</strong></p>
+<ol>
+<li>单波段彩色变换：将遥感图像按亮度分层，对每层赋予不同的色彩，使之成为一幅彩色图像，这种方法又叫密度分割。</li>
+<li>多波段色彩变换：由于原色的选择与原来遥感波段所代表的真实颜色不同，因此生成的合成色不是地物真实的颜色，这种合成叫做假彩色合成。</li>
+<li>HLS变换：HLS代表色调，明度和饱和度。HLS变换是通过算法将RGB模式转换成HLS模式。</li>
+</ol>
+<!-- -->
+<p><strong>4.3.4 图像运算</strong></p>
+<ol>
+<li>差值运算：两幅同样行列数的图像，对应像元的亮度值相减就是差值运算。</li>
+<li>比值运算：两幅同样行列数的图像，对应像元的亮度值相除就是比值运算。</li>
+</ol>
+<!-- -->
+<p><strong>4.3.5 多光谱变换</strong></p>
+<ol>
+<li>K-L变换：主成分变换，以实现数据压缩和图像增强。</li>
+<li>K-T变换：缨帽变换</li>
+</ol>
+<!-- -->
+<h3 id="44-多源信息复合">4.4 多源信息复合</h3>
+<p>多种信息源的复合是将多种遥感平台，多时相遥感数据之间以及遥感数据与非遥感数据之间的信息组合匹配的技术。</p>
+<p><strong>4.4.1 遥感信息的复合</strong></p>
+<ul>
+<li>不同传感器的遥感数据复合</li>
+<li>不同时相的遥感数据复合</li>
+</ul>
+<!-- -->
+<p><strong>4.4.2 遥感与非遥感信息的复合</strong></p>
+<h2 id="第五章-遥感图像目视解译与制图">第五章 遥感图像目视解译与制图</h2>
+<p>遥感图像解译是从遥感图像上获取目标地物信息的过程。</p>
+<p>遥感图像解译分为两种：一种是目视解译，另一种是遥感图像计算机解译。</p>
+<h3 id="51-遥感图像目视解译原理">5.1 遥感图像目视解译原理</h3>
+<p><strong>1.目标地物识别特征</strong></p>
+<ul>
+<li>色：色调，颜色，阴影</li>
+<li>形：形状，纹理，大小</li>
+<li>位：位置，图型，相关布局</li>
+</ul>
+<!-- -->
+<p><strong>2.遥感图像认知过程</strong></p>
+<ul>
+<li>自下向上过程</li>
+<li>自上向下过程</li>
+</ul>
+<!-- -->
+<h3 id="52-遥感图像目视解译基础">5.2 遥感图像目视解译基础</h3>
+<p><strong>5.2.1 遥感摄影像片的判读</strong></p>
+<p>1.遥感摄影像片种类:可见光黑白全色像片、黑白红外像片、彩色像片、彩红外像片、多波段摄影像片和热红外摄影像片。</p>
+<p>2.解译标志</p>
+<ul>
+<li>直接判读标志：能够直接反映和表现目标地物信息的遥感图像的各种特征。</li>
+<li>间接解译标志：能够间接反映和表现目标地物信息的遥感图像的各种特征。</li>
+</ul>
+<!-- -->
+<p><strong>5.2.2 遥感扫描影像的判读</strong></p>
+<p>1.MSSS影像：多光谱扫描仪获取的影像。</p>
+<div><table><caption> 表5.1 Landsat-1,2,3的MSS波段 </caption><tbody><tr><td>波段序号</td><td>波长/um</td><td>波段名称</td><td>地面分辨率/m</td></tr><tr><td>4</td><td>0.5-0.6</td><td>绿色</td><td>79</td></tr><tr><td>5</td><td>0.6-0.7</td><td>红色</td><td>79</td></tr><tr><td>6</td><td>0.7-0.8</td><td>近红外</td><td>79</td></tr><tr><td>7</td><td>0.8-1.1</td><td>近红外</td><td>79</td></tr><tr><td>8</td><td>10.4-12.6</td><td>热红外</td><td>240</td></tr></tbody></table></div>
+<p>2.TM图像：专题绘图仪获取的图像。</p>
+<div><table><caption> 表5.2 Landsat-7上TM技术参数 </caption><tbody><tr><td>波段序号</td><td>波长范围/um</td><td>波段名称</td><td>地面分辨率</td></tr><tr><td>1</td><td>0.45-0.52</td><td>蓝色</td><td>30</td></tr><tr><td>2</td><td>0.52-0.6</td><td>绿色</td><td>30</td></tr><tr><td>3</td><td>0.63-0.69</td><td>红色</td><td>30</td></tr><tr><td>4</td><td>0.76-0.9</td><td>近红外</td><td>30</td></tr><tr><td>5</td><td>1.55-1.75</td><td>短波红外</td><td>30</td></tr><tr><td>6</td><td>10.4-12.5</td><td>热红外</td><td>60</td></tr><tr><td>7</td><td>2.08-2.35</td><td>短波红外</td><td>30</td></tr><tr><td>PAN</td><td>0.50-0.90</td><td>全色波段</td><td>15</td></tr></tbody></table></div>
+<div><div class="reader-message"></div></div>
+<div aria-owns="toolbar"></div>
+<div id="pocket-cta-container" hidden=""><div class="pocket-cta-inner" id="pocket-cta-only"><div class="pocket-cta"><header class="pocket-cta-header">Save anything from across the web in Pocket, your personal library.</header><p class="pocket-cta-subhead">As part of the Firefox family, Pocket provides a quiet, calm space that’s perfect for reading. It strips away all the distractions of the internet so you can really focus.</p><a href="https://getpocket.com/signup?utm_source=firefox_reader&amp;utm_medium=variant_cta_only" class="pocket-btn pocket-sign-up"><strong>Sign up</strong> - it’s free</a><a href="https://getpocket.com/explore?utm_source=firefox_reader&amp;utm_medium=variant_cta_only" class="pocket-btn pocket-discover-more"><strong>Discover more</strong></a></div><button class="pocket-dismiss-cta" title="Dismiss"></button></div><div class="pocket-cta-inner" id="pocket-cta-and-recs"><div class="pocket-recs-top"><div class="col"><header class="pocket-cta-header">Discover the most thought-provoking stories out there, curated by Pocket.</header><p class="pocket-cta-subhead">As part of the Firefox family, Pocket surfaces the best articles out there—new perspectives, intriguing deep-dives, timeless classics—and we do this with the same dedication to privacy you’ve come to expect from Firefox and Mozilla. </p></div><div class="col"><button class="pocket-collapse-recs"></button></div></div><div class="pocket-recs"></div><div class="pocket-sign-up-wrapper"><a href="https://getpocket.com/explore?utm_source=firefox_reader&amp;utm_medium=variant_cta_plus_recs" class="pocket-btn pocket-sign-up"><strong>Discover more</strong></a></div></div></div>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://tyuhao.github.io/post/RS Terminology/">
+              <h3 class="post-title">
+                下一篇：遥感名词解释
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan"></div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/tyuhao" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+        <a href="https://www.zhihu.com/people/T--Y--H" target="_blank">
+          <i class="fab fa-zhihu"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/tyuhao" target="_blank">TYH</a> | <a class="rss" href="https://tyuhao.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>ffmpeg用法 | TYH</title>
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tyuhao.github.io/favicon.ico?v=1670899974928">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tyuhao.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://tyuhao.github.io">
+        <img class="avatar" src="https://tyuhao.github.io/images/avatar.png?v=1670899974928" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://tyuhao.github.io">
+        <h1 class="site-title">TYH</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">ffmpeg用法</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2022-12-01</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://tyuhao.github.io/tag/ffmpeg/">
+                    ffmpeg
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content" v-pre>
+            <h2 id="视频下载">视频下载</h2>
+<p>ffmpeg -i  input.m3u8 &quot;output.mp4&quot;</p>
+<h2 id="视频片段提取">视频片段提取</h2>
+<p>ffmpeg  -i test.avi -vcodec copy -acodec copy -ss 00:00:10 -to 00:00:50 test_cut.mp4 -y</p>
+<h2 id="视频音频提取">视频音频提取</h2>
+<p>ffmpeg -i 01.example.mp4 -vn -codec copy 1.m4a<br>
+ffmpeg -i video.mp4 -vn -y -acodec copy video.aac<br>
+ffmpeg -i example.mp4  output.mp3<br>
+ffmpeg -i input.mp4 -f mp3 output.mp3<br>
+ffmpeg -i example.mp4 -vn  -acodec libmp3lame -ac 2 -qscale:a 4 -ar 48000  audio.mp3</p>
+<h2 id="视频分辨率改变">视频分辨率改变</h2>
+<h2 id="视频码率改变">视频码率改变</h2>
+<p>ffmpeg -i 77.mp4 -b:v 2000k output.mp4</p>
+<h2 id="视频裁剪">视频裁剪</h2>
+<p>ffmpeg -i input.mp4 -filter:v &quot;crop=w:h❌y&quot; output.mp4<br>
+w – 我们想自源视频中裁剪的矩形的宽度。<br>
+h – 矩形的高度。<br>
+x – 我们想自源视频中裁剪的矩形的 x 坐标 。<br>
+y – 矩形的 y 坐标。</p>
+<h2 id="编码格式">编码格式</h2>
+<p>ffmpeg -y -i test.avi  out.mp4<br>
+ffmpeg -i input.mp4 -c:v libx265 -c:a copy output.mp4</p>
+<h2 id="大小">大小</h2>
+<p>ffmpeg -i example.mp4  -fs 15MB  output.mp4<br>
+视频拼接<br>
+ffmpeg -f concat -i filelist.txt -c copy output.mp4<br>
+ffmpeg -i left.mp4 -i right.mp4 -filter_complex hstack -preset veryfast output.mp4</p>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan"></div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/tyuhao" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+        <a href="https://www.zhihu.com/people/T--Y--H" target="_blank">
+          <i class="fab fa-zhihu"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/tyuhao" target="_blank">TYH</a> | <a class="rss" href="https://tyuhao.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>

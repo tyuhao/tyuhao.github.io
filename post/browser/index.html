@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>浏览器使用指南 | TYH</title>
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://tyuhao.github.io/favicon.ico?v=1670899974928">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://tyuhao.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://tyuhao.github.io">
+        <img class="avatar" src="https://tyuhao.github.io/images/avatar.png?v=1670899974928" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://tyuhao.github.io">
+        <h1 class="site-title">TYH</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">浏览器使用指南</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2022-12-03</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://tyuhao.github.io/tag/firefox/">
+                    firefox
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content" v-pre>
+            <ol>
+<li>扩展篇<br>
+1.1 主页/新标签页</li>
+</ol>
+<p>1.1.1 内置标签页：使用浏览器自带的标签页about:newtab</p>
+<pre><code>chrome浏览器：chrome:newtab
+edge浏览器：edge:newtab
+firefox：about:home、about:newtab
+</code></pre>
+<p>其它浏览器不一一举例了<br>
+分别为 chrome、edge、firefox1、firefox2</p>
+<p>firefox使用userchrome.css修改界面具体方法稍后会具体介绍</p>
+<p>1.1.2 空白页 什么都没有的页面about:blank</p>
+<p>1.2.3 扩展插件例如 Infinty Tab 或网页 （百度、必应、各类起始页）或者本地 html文件也行<br>
+infinty插件 青柠起始页 自己改的html文件（在线和本地）<br>
+1.2 广告屏蔽</p>
+<p>有uBlock Origin、AdGuard 、Ghostery、AdBlocker、AdBlocker Plus等。</p>
+<p>推荐 ublock origin占用内存小。adguard也不错界面美观。其它的也各有优缺点感兴趣的可自行尝试。<br>
+1.3 翻译</p>
+<p>chrome 和 edge 都自带了翻译。基于chromium的浏览器例如brave 、centbrowser、360极速浏览器等一般都有网页翻译功能。火狐现在正式版还未有网页翻译功能，不过正在火狐开发团队正在研究利用机器学习实现本地翻译以保护用户隐私。firefox 开发版、nightly、测试版可通过实验功能 about:config 打开,暂不支持中文不多介绍。也可调用 bing 或 yandex 的翻译 api进行翻译。火狐要想达到类似网页翻译功能可安装 翻译网页插件。<br>
+翻译网页插件</p>
+<p>除了网页翻译还有划词翻译等可使用沙拉查词。或安装油猴脚本 网页翻译。</p>
+<p>或使用小书签 bookmarklet,新建书签将下面代码复制进网址栏。</p>
+<p>javascript: void((function () { if (!document.body) { return } var popup = document.querySelectorAll('.cyxy-target-popup'); if (popup &amp;&amp; popup.length &gt; 0) { return } try { var trs = document.createElement('script'); trs.type = 'text/javascript'; trs.charset = 'UTF-8'; trs.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'caiyunapp.com/dest/trs.js'; document.body.appendChild(trs); } catch () { ealert(); } edocument.addEventListener('securitypolicyviolation', function handler() { econsole.error('securitypolicyviolation', ); ealert('%E5%BD%A9%E4%BA%91%E5%B0%8F%E8%AF%91'); document.removeEventListener('securitypolicyviolation', handler); });})());</p>
+<p>1.4 其它：鼠标拖拽、手势、油猴、自动化...</p>
+<p>鼠标拖拽</p>
+<p>Firefox 建议 闪耀拖拽 ，Chrome、edge 用 超级拖拽</p>
+<p>鼠标手势我用的不多，不作推荐。之前用的百分浏览器自带。</p>
+<p>油猴 使用这三个中的一个就行，脚本网站下载： https://greasyfork.org/<br>
+油猴插件<br>
+1.5 浏览器插件安装方法</p>
+<p>edge扩展商店 和 firefox扩展商店 使用浏览器官方扩展商店，chrome扩展商店 进不去的用户可以使用crxsoso.com、CrxDL 、扩展迷并开启开发者模式安装。<br>
+2. 脚本篇<br>
+2.1 网页样式</p>
+<p>可使用 xstyle 、或 stylus等对网页进行修改<br>
+修改前<br>
+2.2 视频解析</p>
+<p>https://greasyfork.org/zh-CN/scripts/370634<br>
+2.3 翻译</p>
+<p>网页翻译脚本<br>
+安装翻译脚本后</p>
+<p>划词翻译<br>
+2.4 使用方法</p>
+<p>先安装油猴插件、在安装脚本。<br>
+3. 实验功能<br>
+chrome浏览器: 在地址栏输入 chrome:flags 可选择一些实验性功能打开。例如平滑滚动，滚动条自动隐藏，多线程下载，标签页预览等<br>
+firefox 火狐：在地址栏输入 about:config<br>
+4. 浏览器自带功能<br>
+4.1 创建应用</p>
+<p>chrome和edge浏览器会生成类似原生应用的,firefox我没找到类似的功能按钮，不过可以用js 实现创建窗口<br>
+创建方法<br>
+squoosh图片压缩网页创建的app<br>
+4.2 截图</p>
+<p>浏览器自带足够，或者安装第三方截图软件例如 snipaste<br>
+4.3 创建多用户<br>
+使用浏览器自带功能或插件<br>
+4.4 小书签 bookmarklet</p>
+<p>可实现网页翻译，vip视频解析，等类似油猴脚本的功能，而且不用安装什么插件。<br>
+5. 火狐样式修改</p>
+<p>通过修改浏览器样式文件可以使firefox达到和chrome一样的界面<br>
+5.1 方法</p>
+<ol>
+<li>在 Firefox 的地址栏访问 about:config，搜索 toolkit.legacyUserProfileCustomizations.stylesheets，设置为 true</li>
+<li>在 Firefox 的地址栏访问 about:support，选择下方的 Profile Folder，点击 Open Folder。</li>
+<li>创建一个chrome 的文件夹</li>
+<li>在chrome文件夹创建userChrome.css,usercontent.css 文件。</li>
+</ol>
+<p>添加自己的代码，不会写的话可以直接使用或参考 https://firefoxcss-store.github.io/<br>
+我自己的样式1<br>
+我自己的样式1<br>
+firefox css-store站<br>
+Australis like tabs in Proton UI<br>
+minimal-functional-fox 之前的版本<br>
+minimal-functional-fox</p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://tyuhao.github.io/post/ffmpeg-yong-fa/">
+              <h3 class="post-title">
+                下一篇：ffmpeg用法
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan"></div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/tyuhao" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+        <a href="https://www.zhihu.com/people/T--Y--H" target="_blank">
+          <i class="fab fa-zhihu"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/tyuhao" target="_blank">TYH</a> | <a class="rss" href="https://tyuhao.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
